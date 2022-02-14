@@ -34,3 +34,14 @@ a {
   color: white;
   text-decoration: none;
 }
+
+.comment-container {
+  padding: 30px 45px;
+  background-color: rgb(204, 204, 204);
+  border-radius: 20px;
+  color: black;
+  margin: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
