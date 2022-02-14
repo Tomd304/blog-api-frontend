@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import stylesheet from "./index.css";
+import Navbar from "./Navbar";
 
 const Post = (props) => {
   const postId = useParams().id;
@@ -29,8 +30,9 @@ const Post = (props) => {
   };
 
   return (
-    <div style={{ marginTop: 30 }}>
-      <div className="card">
+    <div>
+      <Navbar />
+      <div className="card" style={{ marginTop: 30 }}>
         <h2>{post.title}</h2>
         <h5>Published at: {post.createdAt}</h5>
         <p>{post.content}</p>

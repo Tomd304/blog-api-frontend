@@ -1,6 +1,7 @@
 import stylesheet from "./index.css";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const Homepage = () => {
   const [posts, setPosts] = useState([]);
@@ -13,6 +14,7 @@ const Homepage = () => {
 
   return (
     <div>
+      <Navbar />
       <div className="title">
         <h1>Blogs Posts</h1>
       </div>
